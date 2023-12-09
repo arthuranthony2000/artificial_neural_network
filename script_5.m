@@ -37,8 +37,10 @@ g = @(w) direct(x, w, f, n, dim);
 
 learning_rate = 10;
 
+tic
 w_out = gradient_descent(g, w0, y, learning_rate, itermax);
+time = toc
 
-error = fobj(w_out);
+error = fobj(w_out)
 
 

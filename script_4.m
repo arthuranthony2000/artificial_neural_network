@@ -26,8 +26,10 @@ fobj = @(w) fitness(x, w, n, f, y, dim, @evaluate);
 
 options = gaoptimset('PopulationSize', 100, 'Generations', 100);
 
+tic
 optimal_weights = ga(fobj, m, [], [], [], [], [], [], [], options);
+time = toc
 
-error = fobj(optimal_weights);
+error = fobj(optimal_weights)
 
 
