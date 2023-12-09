@@ -1,4 +1,4 @@
-function y_estimated = perceptron_direct(x, w, f, n, dim)
+function y_estimated = direct(x, w, f, n, dim)
 
 w_out = cell(1, n);
 
@@ -13,7 +13,7 @@ y_estimated = zeros(size(x, 1), 1);
 for i=1:size(x, 1)
     out = x(i, :);
     for l=1:size(x, 2)
-        out = perceptron_calc(out, w_out{l}, f);
+        out = calc(out, w_out{l}, f);
     end
     y_estimated(i) = out;
 end

@@ -1,4 +1,4 @@
-function error = perceptron_fitness(x, w, n, f, y, dim, perceptron_evaluate)
+function error = fitness(x, w, n, f, y, dim, evaluate)
 
 w_out = cell(1, n);
 
@@ -8,5 +8,5 @@ for i = 1:n
     k = dim(i, 1) * dim(i, 2) + 1;
 end
 
-error = perceptron_evaluate(x, w_out, f, y);
+error = evaluate(x, w_out, f, y);
 end
