@@ -13,7 +13,7 @@ f = @(x) 1/(1 + exp(1)^-x);
 y = [0 1 1 0];
 
 e = evaluate(x, w, f, y);
-
+%%
 dim = zeros(n, 2);
 
 w_vector = [];
