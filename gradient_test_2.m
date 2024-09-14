@@ -28,7 +28,7 @@ for iteracao = 1:num_iteracoes
     % Atualizar os parâmetros usando o gradiente
     ponto_atual = ponto_atual - taxa_aprendizado * gradiente_numerico;
 
-    % Exibir informações a cada iteração (opcional)
+    % Exibir informações a cada iteração 
     fprintf('Iteração %d: ponto = [%.4f, %.4f, %.4f], f(ponto) = %.4f\n', iteracao, ponto_atual, funcao_alvo(ponto_atual(1), ponto_atual(2), ponto_atual(3)));
 end
 

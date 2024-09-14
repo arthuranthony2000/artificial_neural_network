@@ -19,7 +19,7 @@ for iteracao = 1:num_iteracoes
     gradiente = derivada_funcao(x_atual);
     x_atual = x_atual - taxa_aprendizado * gradiente;
 
-    % Exibir informações a cada iteração (opcional)
+    % Exibir informações a cada iteração 
     fprintf('Iteração %d: x = %.4f, f(x) = %.4f\n', iteracao, x_atual, funcao_alvo(x_atual));
 end
 
